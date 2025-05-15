@@ -1,5 +1,5 @@
-server time-a-g.nist.gov iburst
-server time-b-g.nist.gov iburst
-server time-c-g.nist.gov iburst
-server time-d-g.nist.gov iburst
-server time-e-g.nist.gov iburst
+server 129.6.15.28 iburst
+server 129.6.15.29 iburst
+server 129.6.15.30 iburst
+server 129.6.15.27 iburst
+server 129.6.15.26 iburst
