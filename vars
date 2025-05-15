@@ -4,8 +4,8 @@
 # of these to be appropriate for your environment.
 #
 
-IMAGE_NAME="sunshine811/chronyd"
-CONTAINER_NAME="ntp"
+IMAGE_NAME="chronyd-s811"
+CONTAINER_NAME="ntp-server"
 
 # (optional) enable control of system clock
 ENABLE_SYSCLK=false
