@@ -1,0 +1,16 @@
+#
+# this file contains a number of global variables used
+# by the docker container and its scripts. update any
+# of these to be appropriate for your environment.
+#
+
+IMAGE_NAME="sunshine811/chronyd"
+CONTAINER_NAME="ntp"
+
+# (optional) enable control of system clock
+ENABLE_SYSCLK=false
+
+# (optional) define chrony log level to use
+# default: 0
+# options: 0 (informational), 1 (warning), 2 (non-fatal error), and 3 (fatal error)
+LOG_LEVEL=0
