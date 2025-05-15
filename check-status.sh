@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-. vars
+source vars
 
 # This script updates the Chrony application on an S811 board.
 # It uses the Docker image "chronyd-s811" to run the application.
@@ -40,4 +40,4 @@ fi
 
 # Check the status of the Chrony service inside the container
 echo "Checking the status of the Chrony service inside the container..."
-docker exec -it $CONTAINER_NAME chronyc tracking
+docker exec -it "$CONTAINER_NAME" chronyc tracking

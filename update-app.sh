@@ -1,12 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
-APP_NAME="ntp-server"
+source vars
 
 # This script updates the Chrony application on an S811 board.
 # It uses the Docker image "chronyd-s811" to run the application.
 # Ensure the script is run with root privileges
 # or with sudo to have permission to run Docker containers.
 # Usage: ./update-app.sh
+
 # Check if the script is run with root privileges
 if [ "$EUID" -ne 0 ]; then
     echo "Please run as root or use sudo."
@@ -102,4 +103,4 @@ docker compose logs --tail=100
 
 # Check the status of the Chrony service inside the container
 echo "Checking the status of the Chrony service inside the container..."
-docker exec -it ${APP_NAME} chronyc tracking
+docker exec -it "$CONTAINER_NAME" chronyc tracking
