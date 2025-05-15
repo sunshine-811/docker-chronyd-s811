@@ -1,2 +1,5 @@
-peer 172.28.16.123 iburst
+peer 172.28.0.123 iburst
 peer 172.28.8.123 iburst
+peer 172.18.0.123 iburst
+peer 172.18.1.123 iburst
+peer 192.168.13.123 iburst
