@@ -1,12 +1,14 @@
 services:
   ntp:
     image: chronyd-s811:latest
-    container_name: ntp
+    container_name: ntp-server
+    cap_add:
+    - SYS_TIME
     environment:
       LOG_LEVEL: 0
-#      ENABLE_SYSCLK: "true"
+      ENABLE_SYSCLK: "true"
     ports:
       - 123:123/udp
     restart: unless-stopped
     volumes:
-      - ./config:/etc/chrony
+      - ./config:/etc/chrony:ro
