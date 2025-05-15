@@ -11,4 +11,5 @@ services:
       - 123:123/udp
     restart: unless-stopped
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - ./config:/etc/chrony:ro
